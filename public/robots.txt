@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Google bots
+User-agent: Googlebot
+Allow: /
+
+# Bing bots
+User-agent: Bingbot
+Allow: /
+
+# Yandex bots
+User-agent: Yandex
+Allow: /
+
+# Disallow admin areas (if any in the future)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+
+# Sitemap
+Sitemap: https://rl-landingpage.vercel.app/sitemap.xml

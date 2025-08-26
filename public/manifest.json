@@ -1,0 +1,42 @@
+{
+  "name": "Rumah Laptop Bandung - Jual Laptop Bekas Harga Terbaik",
+  "short_name": "Rumah Laptop Bandung",
+  "description": "Jual laptop bekas dengan harga terbaik di Bandung. Proses cepat 15 menit, bayar cash langsung, harga tertinggi dijamin.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f0f0f",
+  "theme_color": "#bf6f1f",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": ["business", "shopping"],
+  "lang": "id",
+  "dir": "ltr",
+  "scope": "/",
+  "id": "/",
+  "screenshots": [
+    {
+      "src": "/logo.png",
+      "type": "image/png",
+      "sizes": "800x600",
+      "form_factor": "wide"
+    }
+  ]
+}
