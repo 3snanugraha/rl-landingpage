@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://rl-landingpage.vercel.app"; // Update with your actual domain
+const siteUrl = "https://rumahlaptopbandung.my.id"; // Update with your actual domain
 
 export const metadata: Metadata = {
   title: {
@@ -129,17 +129,67 @@ export default function RootLayout({
         <meta name="revisit-after" content="7 days" />
         <meta name="distribution" content="global" />
         
+        {/* Business-specific meta tags */}
+        <meta name="business:contact_data:street_address" content="Jl. Babakan Kajaksan No.7, Ciseureuh" />
+        <meta name="business:contact_data:locality" content="Bandung" />
+        <meta name="business:contact_data:region" content="Jawa Barat" />
+        <meta name="business:contact_data:postal_code" content="40255" />
+        <meta name="business:contact_data:country_name" content="Indonesia" />
+        <meta name="business:contact_data:phone_number" content="+62 813-2069-2038" />
+        <meta name="business:contact_data:website" content="https://rumahlaptopbandung.my.id" />
+        
+        {/* Service-specific tags */}
+        <meta name="product" content="Laptop Bekas, MacBook Bekas, Gaming Laptop" />
+        <meta name="service" content="Jual Beli Laptop Bekas" />
+        <meta name="category" content="Electronics, Computer Hardware" />
+        <meta name="price" content="Harga Bersaing" />
+        
+        {/* Local business tags */}
+        <meta name="locality" content="Bandung" />
+        <meta name="region" content="Jawa Barat" />
+        <meta name="country" content="Indonesia" />
+        <meta name="currency" content="IDR" />
+        
+        {/* Additional SEO tags */}
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1" />
+        <meta name="bingbot" content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1" />
+        <meta name="slurp" content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1" />
+        
         {/* Structured Data - JSON-LD */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              "name": "Rumah Laptop Bandung",
-              "image": "https://rl-landingpage.vercel.app/logo.png",
-              "@id": "https://rl-landingpage.vercel.app",
-              "url": "https://rl-landingpage.vercel.app",
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "Rumah Laptop Bandung",
+                "url": "https://rumahlaptopbandung.my.id",
+                "logo": "https://rumahlaptopbandung.my.id/logo.png",
+                "description": "Toko laptop bekas terpercaya di Bandung sejak 2016",
+                "foundingDate": "2016",
+                "founder": {
+                  "@type": "Person",
+                  "name": "Rumah Laptop Bandung"
+                },
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "telephone": "+62 813-2069-2038",
+                  "contactType": "customer service",
+                  "availableLanguage": "Indonesian"
+                },
+                "sameAs": [
+                  "https://wa.me/6281320692038"
+                ]
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "LocalBusiness",
+                "name": "Rumah Laptop Bandung",
+              "image": "https://rumahlaptopbandung.my.id/logo.png",
+              "@id": "https://rumahlaptopbandung.my.id",
+              "url": "https://rumahlaptopbandung.my.id",
               "telephone": "+62 813-2069-2038",
               "address": {
                 "@type": "PostalAddress",
@@ -213,7 +263,8 @@ export default function RootLayout({
                   "reviewBody": "Proses verifikasi dokumen ketat tapi justru bikin tenang. Laptop bekas kantor saya dijual dengan harga bagus dan proses legal."
                 }
               ]
-            })
+              }
+            ])
           }}
         />
       </head>

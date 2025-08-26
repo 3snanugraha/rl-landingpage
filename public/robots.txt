@@ -19,4 +19,4 @@ Disallow: /api/
 Disallow: /_next/
 
 # Sitemap
-Sitemap: https://rl-landingpage.vercel.app/sitemap.xml
+Sitemap: https://rumahlaptopbandung.my.id/sitemap.xml
