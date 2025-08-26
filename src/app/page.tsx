@@ -1,5 +1,13 @@
 import Image from "next/image";
 
+// WhatsApp message template
+const getWhatsAppURL = () => {
+  const message = `Hi Rumah Laptop Bandung, saya tertarik untuk menjual laptop saya, berikut detailnya :
+Merk : .....
+Spesifikasi : .....`;
+  return `https://wa.me/6281320692038?text=${encodeURIComponent(message)}`;
+};
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
@@ -22,7 +30,7 @@ export default function Home() {
             </div>
           </div>
           <a
-            href="https://wa.me/6281320692038"
+            href={getWhatsAppURL()}
             className="btn-primary px-6 py-2 rounded-lg font-semibold text-sm flex items-center space-x-2 hover:scale-105"
             target="_blank"
             rel="noopener noreferrer"
@@ -73,7 +81,7 @@ export default function Home() {
 
           <div className="space-y-4">
             <a
-              href="https://wa.me/6281320692038"
+              href={getWhatsAppURL()}
               className="inline-block btn-primary px-12 py-4 rounded-lg text-xl font-bold hover:scale-110 transition-transform"
               target="_blank"
               rel="noopener noreferrer"
@@ -349,7 +357,7 @@ export default function Home() {
                 <p>💰 Dapatkan estimasi harga</p>
               </div>
               <a
-                href="https://wa.me/6281320692038"
+                href={getWhatsAppURL()}
                 className="mt-6 inline-block btn-primary px-6 py-2 rounded-lg font-semibold"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -618,7 +626,7 @@ export default function Home() {
               <div className="card-glow bg-[var(--card-bg)] p-8 rounded-lg text-center">
                 <h4 className="text-xl font-bold text-[var(--primary)] mb-4">💬 Chat Langsung</h4>
                 <a
-                  href="https://wa.me/6281320692038"
+                  href={getWhatsAppURL()}
                   className="inline-block btn-primary px-8 py-3 rounded-lg font-semibold hover:scale-105"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -736,7 +744,7 @@ export default function Home() {
             <div className="space-y-6">
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <a
-                  href="https://wa.me/6281320692038"
+                  href={getWhatsAppURL()}
                   className="bg-[var(--background)] text-[var(--primary)] px-12 py-4 rounded-lg text-xl font-bold hover:scale-110 transition-transform border-2 border-[var(--background)] hover:bg-transparent hover:text-[var(--background)]"
                   target="_blank"
                   rel="noopener noreferrer"
