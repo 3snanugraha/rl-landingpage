@@ -48,7 +48,7 @@ export default function Home() {
             <h2 className="text-4xl md:text-6xl font-bold mb-4 text-glow">
               LAGI BUTUH UANG CEPAT?
             </h2>
-            <h3 className="text-3xl md:text-5xl font-bold mb-6 text-[var(--accent)]">
+            <h3 className="text-3xl md:text-5xl font-bold mb-6 text-red-600">
               LAPTOP NGANGGUR DI RUMAH?
             </h3>
             <p className="text-2xl md:text-3xl font-bold mb-8">
